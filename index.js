@@ -1,12 +1,19 @@
+class Task {
+    constructor(description, status) {
+        this.description = description;
+        this.status = status;
+    }
+}
+
 let tasks = [
-    {description: 'pack spikes for track meet', status: 'todo'}, 
-    {description: 'make my bed', status: 'todo'}, 
-    {description: 'walk the dog', status: 'todo'},
-    {description: 'write draft english paper', status: 'doing'},
-    {description: 'sanding art project', status: 'doing'},
-    {description: 'wash the dishes', status: 'done'},
-    {description: 'finish math homework', status: 'done'},
-    {description: 'practice my trumpet', status: 'done'}];
+    new Task('pack spikes for track meet', 'todo'), 
+    new Task('make my bed', 'todo'), 
+    new Task('walk the dog', 'todo'),
+    new Task('write draft english paper', 'doing'),
+    new Task('sanding art project', 'doing'),
+    new Task('wash the dishes', 'done'),
+    new Task('finish math homework', 'done'),
+    new Task('practice my trumpet', 'done')];
             
 function drawCard(index, task){
     return `<div id="task-${index}" class="card">
